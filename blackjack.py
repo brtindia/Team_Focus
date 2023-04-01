@@ -82,7 +82,7 @@ for h in sum_lst:
 	if sum_tot > 21:
 		print("Dealer busts")
 	elif h > sum_tot:
-		print("Player{l} win")
+		print(f"Player{l} win")
 	elif h < sum_tot:
 		print("Dealer win")
 	else:
