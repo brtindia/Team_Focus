@@ -5,6 +5,7 @@ dealer_list = []
 sum_lst = []
 sum_tot=0
 player_tot=0
+l=1
 
 
 
@@ -77,15 +78,16 @@ print(f"dealer points is: {sum_tot}")
 
 for h in sum_lst:
 	print(f"Dealer hand : {sum_tot}")
-	print(f"Player hand: {h}")
+	print(f"Player{l} hand: {h}")
 	if sum_tot > 21:
 		print("Dealer busts")
 	elif h > sum_tot:
-		print("Player win")
+		print("Player{l} win")
 	elif h < sum_tot:
 		print("Dealer win")
 	else:
-		print("its a tie")			
+		print("its a tie")
+	l=l+1
 		
 	
 	
